@@ -23,6 +23,22 @@
     color: var(--text-color);
 }
 
+[class*="fakeLink-"] > span {
+    color: var(--text-link) !important;
+}
+
 [class*="roleIcon-"] {
+    display: none;
+}
+
+/** vencord badge pad fix */
+[aria-label="User Badges"] {
+    padding: 0px;
+    justify-content: flex-start;
+}
+
+/** remove ui bloat */
+[class*="channelTextArea"] button[aria-label="Send a gift"], ul[aria-label="Direct Messages"] li[aria-posinset="3"], a[href="https://support.discord.com"]
+{
     display: none;
 }
