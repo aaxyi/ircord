@@ -1,0 +1,14 @@
+[class*="channelTextArea"] button[aria-label="Send a gift"], ul[aria-label="Direct Messages"] li[aria-posinset="3"], a[href="https://support.discord.com"]
+{
+    display: none;
+}
+
+/** thx ven */
+[class^="channel-"] > div > [href="/store"], /* Nitro Button above DM List */
+[class^="channelTextArea"] [class^="buttons-"] > button, /* Hide Gift Button */
+[class^="upsellVisible-"], /* Hide Banner Nitro Upsell Header */
+[class^="premiumIconWrapper"], /* Hide Nitro Icon on Banners */
+[class^="characterCount-"] [class*="upsell-"], /* "Send longer Messages with Discord Nitro!" */
+[class^="emojiSection-"] [class*="shinyButton-"] /* "Get Nitro" button in Emoji/Sticker modal" */ {
+    display: none !important;
+}

@@ -1,0 +1,20 @@
+/** Role dots on the right side. Not displaying replying role dots on the right side is intended. */
+
+[class*="headerText-"],
+[class*="nameAndDecorators-"] [class*="username-"] span:first-child {
+    display: inline-flex;
+}
+
+[class*="headerText-"] span[aria-hidden="true"] {
+    order: 2;
+}
+
+[class*="nameAndDecorators-"] [class*="username-"] span:first-child {
+    flex-direction: row-reverse;
+}
+
+[class*="roleDot-"],
+[class*="roleDotLeft-"] {
+    margin-right: 0;
+    margin-left: 0.25rem;
+}

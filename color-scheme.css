@@ -1,0 +1,26 @@
+/** Apply a color scheme to Discord UI */
+
+.theme-dark {
+    --background-primary: hsl(0, 0%, 4%);
+    --background-secondary: hsl(0, 0%, 5%);
+    --background-secondary-alt: hsl(0, 0%, 7%);
+    --background-tertiary: hsl(0, 0%, 6%);
+    --background-accent: #b46677;
+    --background-floating: hsl(0, 0%, 6%);
+    --background-modifier-hover: hsla(0, 0%, 6%, 0.5);
+    --background-modifier-active: hsla(0, 0%, 6%, 0.5);
+    --background-modifier-selected: hsla(0, 0%, 6%, 0.5);
+    --background-modifier-accent: hsla(0, 0%, 6%, 0.5);
+    --channeltextarea-background: hsl(0, 0%, 6%);
+    --text-color: #d5ccbd;
+    --text-link: var(--background-accent);
+}
+
+[class*="messageContent-"],
+[class*="textArea-"] span {
+    color: var(--text-color);
+}
+
+[class*="fakeLink-"] > span {
+    color: var(--text-link) !important;
+}

@@ -1,0 +1,6 @@
+/** vencord badge pad fix */
+
+[aria-label="User Badges"] {
+    padding: 0px;
+    justify-content: flex-start;
+}

@@ -1,0 +1,5 @@
+/** Remove avatar decorations on chat only */
+
+[class*="contents-"] [class*="avatarDecoration-"] {
+    display: none;
+}

@@ -1,0 +1,5 @@
+/* Disables role icons on chat only. */
+
+[class*="headerText-"] [class*="roleIcon-"] {
+    display: none;
+}

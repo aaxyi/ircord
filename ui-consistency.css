@@ -1,0 +1,21 @@
+/* Fix variable bindings on missing styles. Credits to CodeF53 */
+
+/* stuff that doesnt use vars that should */
+
+.container-3wLKDe,
+.background-fkKrXt,
+.container-1um7CU {
+    background-color: var(--primary-dark-660) !important;
+}
+
+[class^="chat"] > [class^="header"] {
+    background-color: var(--background-primary) !important;
+}
+
+[fill="#36393f"] {
+    fill: var(--background-primary);
+}
+
+[fill="#6370f4"] {
+    fill: var(--brand-experiment);
+}
